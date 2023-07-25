@@ -1,0 +1,726 @@
+body {
+  overflow-x: hidden;
+}
+.bg-element-icon {
+  position: absolute;
+  height: 72.18%;
+  width: 74.79%;
+  top: 27.82%;
+  right: 0;
+  bottom: 0;
+  left: 25.21%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.shape-icon {
+  position: absolute;
+  top: 302.97px;
+  left: 206.58px;
+  width: 117.42px;
+  height: 128.03px;
+  background-image: url("./public/shape.svg");
+  background-size: cover;
+  opacity: 1;
+  /* Initially set the shape icon as visible */
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  /* Default shape icon on the bottom */
+}
+
+.shape-icon-hover {
+  position: absolute;
+  top: 302.97px;
+  /* Adjust the position to match the default shape icon */
+  left: 206.58px;
+  /* Adjust the position to match the default shape icon */
+  width: 117.42px;
+  /* Adjust the size to match the default shape icon */
+  height: 128.03px;
+  /* Adjust the size to match the default shape icon */
+  background-image: url("./public/hover-shape.svg");
+  /* Set the hover shape icon */
+  background-size: cover;
+  opacity: 0;
+  /* Initially set the hover shape icon as transparent */
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  /* Hover shape icon on top */
+}
+
+/* Show the hover shape icon when hovering over the div */
+.div:hover .shape-icon-hover {
+  opacity: 1;
+  /* Show the hover shape icon when hovering */
+}
+
+/* Hide the default shape icon when hovering */
+.div:hover .shape-icon {
+  opacity: 0;
+}
+
+.div {
+  /* Rest of your styles for .div */
+}
+
+.icon {
+  border-radius: var(--br-3xl);
+  width: 76px;
+  height: 76px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.exclusive-coach,
+.icon {
+  position: relative;
+  font-family: 'Urbanist';
+}
+
+.lorem-ipsum-dolor {
+  position: relative;
+  font-size: var(--font-size-sm);
+  line-height: 25px;
+  color: var(--color-slategray);
+  display: inline-block;
+  width: 248px;
+}
+
+.left-arrow-1-icon {
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.button,
+.content,
+.text {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-4xs);
+  font-size: var(--font-size-base);
+  color: var(--secondary);
+  border: none;
+  background: none;
+  margin-left: -5px;
+  cursor: pointer;
+}
+
+.button .exclusive-coach {
+  white-space: nowrap;
+}
+
+.content,
+.text {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-11xl);
+}
+
+.content {
+  position: absolute;
+  top: calc(50% - 125px);
+  left: 30px;
+}
+
+.div {
+  position: relative;
+  border-radius: var(--br-sm);
+  background-color: var(--white);
+  box-shadow: 11px 15px 30px rgba(128, 137, 225, 0.1);
+  border: 1px solid var(--color-lavender);
+  box-sizing: border-box;
+  width: 303px;
+  height: 380px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+
+.cart {
+  position: absolute;
+  top: 1020px;
+  left: calc(50% - 660px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 36px;
+
+}
+
+.bg-element-icon1 {
+  position: absolute;
+  top: calc(50% - 575px);
+  left: 0;
+  width: 2431.05px;
+  height: 1470.2px;
+}
+
+.a-better {
+  margin: 0;
+}
+
+.a-better-learning-container {
+  position: relative;
+  line-height: 85px;
+  font-weight: 800;
+  display: inline-block;
+  width: 629px;
+}
+
+.all-the-lorem {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 32px;
+  display: inline-block;
+  width: 440px;
+  font-family: 'Urbanist';
+}
+
+.icon3 {
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.take-now-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  gap: var(--gap-3xs);
+}
+
+.button4,
+.frame-child {
+  position: absolute;
+  top: 0;
+  height: 56px;
+  z-index: 1;
+  margin-right: 7px;
+}
+
+.small-elements-icon:hover~.button4 {
+  background-color: #f88b4a;
+}
+
+.button4 {
+  position: relative;
+  /* Change the position to relative */
+  border-radius: var(--br-7xs);
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: var(--gap-3xs);
+  padding: 0 var(--padding-13xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.button4::before {
+  content: "";
+  /* Add a pseudo-element */
+  position: absolute;
+  top: 0;
+  right: 100%;
+  /* Start the pseudo-element outside the button on the right */
+  width: 100%;
+  height: 100%;
+  background-color: #f88b4a;
+  z-index: -1;
+  transition: right 0.3s;
+  /* Add a transition to create the sliding effect */
+}
+
+.button-parent .button4:hover::before {
+  right: 0;
+  /* Slide the pseudo-element from right to left on hover */
+}
+
+/* .button-parent .button4:hover {
+  background-color: #f88b4a; 
+} */
+.frame-child {
+  right: 0;
+  width: 34px;
+}
+
+.button-parent {
+  position: relative;
+  width: 173px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.button-group,
+.button-parent,
+.button5 {
+  border-radius: var(--br-7xs);
+  height: 56px;
+}
+
+.button5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 0 var(--padding-13xl);
+  align-items: center;
+  justify-content: center;
+}
+
+.button5:hover {
+  background-color: #8282E9;
+  cursor: pointer;
+}
+
+.button5,
+.frame-child1 {
+  position: absolute;
+  top: 0;
+  height: 56px;
+  z-index: 1;
+  right: 20px;
+}
+
+.button-group {
+  position: relative;
+  width: 222px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.a-better-learning-journey-futu-parent,
+.frame-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.frame-parent {
+  flex-direction: row;
+  gap: 20px;
+  font-size: var(--font-size-lg);
+}
+
+.a-better-learning-journey-futu-parent {
+  position: absolute;
+  top: calc(50% - 199px);
+  left: 0;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.title {
+  position: absolute;
+  top: calc(50% - 176px);
+  left: 300px;
+  width: 629px;
+  height: 398px;
+}
+
+.slider-icon {
+  position: absolute;
+  top: 141px;
+  left: 1058px;
+  width: 746px;
+  height: 746px;
+}
+
+.small-elements-icon {
+  position: absolute;
+  top: 113px;
+  left: 57px;
+  width: 1634.46px;
+  height: 701px;
+}
+
+.bg,
+.image-icon {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.bg {
+  top: 0;
+  left: 0;
+  border: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 157px;
+  height: 158px;
+}
+
+.image-icon {
+  top: 16.1px;
+  left: 15.41px;
+  width: 125.86px;
+  height: 125.86px;
+  object-fit: cover;
+}
+
+.icon5 {
+  position: relative;
+  width: 16.5px;
+  height: 19.05px;
+}
+
+.videoContainer {
+  height: 1000px;
+  width: 1500px;
+  margin-top: 230px;
+  margin-left: 250px;
+  z-index: 3;
+}
+
+.video-icon {
+  position: absolute;
+  top: 53.76px;
+  left: 53.7px;
+  border-radius: 49px;
+  background-color: var(--white);
+  width: 49.61px;
+  height: 49.61px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal iframe {
+  width: 80%;
+  height: 80%;
+  border: none;
+}
+
+.shape,
+.video {
+  position: absolute;
+  top: 304px;
+  left: 1619px;
+  width: 157px;
+  height: 158px;
+}
+
+.shape {
+  top: 84.14px;
+  left: 31.55px;
+  border-radius: 7.01px;
+  border: 0.9px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 195.45px;
+  height: 115.69px;
+  overflow: hidden;
+}
+
+.graphic-design,
+.latest-work-shop {
+  position: absolute;
+  top: 30.68px;
+  left: 28.05px;
+  line-height: 28.05px;
+  font-weight: 600;
+  font-family: 'Urbanist';
+}
+
+.graphic-design {
+  top: 56.09px;
+  font-size: 12.27px;
+  color: var(--grey);
+  font-family: 'Urbanist';
+}
+
+.icon6 {
+  position: relative;
+  width: 15.78px;
+  height: 15.78px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.button6 {
+  position: absolute;
+  top: 82.39px;
+  left: 28.05px;
+  border-radius: 5.26px;
+  background-color: var(--secondary);
+  height: 34.18px;
+  display: flex;
+  flex-direction: row;
+  padding: 14.023165702819824px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 8.76px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.frame-inner {
+  position: absolute;
+  top: 99.4px;
+  left: 122.7px;
+  width: 86.77px;
+  height: 37.33px;
+}
+
+.latest-work-shop-parent {
+  position: absolute;
+  top: 44.7px;
+  left: 0;
+  border-radius: 12.27px;
+  background-color: var(--white);
+  box-shadow: 23.664093017578125px 23.664093017578125px 45.58px rgba(0, 0, 0, 0.08);
+  width: 209.47px;
+  height: 136.73px;
+  overflow: hidden;
+}
+
+.cart-child,
+.cart-item {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cart-child {
+  top: 0;
+  left: 12.27px;
+  background-color: var(--primary);
+  width: 66.61px;
+  height: 66.61px;
+}
+
+.cart-item {
+  top: 7.01px;
+  left: 19.28px;
+  width: 52.59px;
+  height: 52.59px;
+  object-fit: cover;
+}
+
+.cart1,
+.header-cart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 209.47px;
+  height: 181.42px;
+}
+
+.header-cart {
+  top: 568.08px;
+  left: 1010px;
+  width: 227px;
+  height: 199.83px;
+  font-size: 15.78px;
+  color: #000;
+}
+
+.hero-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+  width: 1920px;
+  height: 900px;
+  overflow: hidden;
+  font-size: 70px;
+  color: var(--white);
+}
+
+.home-page-01 {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  height: 1470px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--bg);
+  font-family: var(--font-urbanist);
+}
+
+@media (max-width: 600px) {
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 20%;
+    /* Ensure that the html and body elements fill the entire viewport */
+  }
+
+  .home-page-01 {
+    height: auto;
+    padding: 0;
+    /* Remove the fixed height for smaller screens */
+  }
+
+  .bg-element-icon {
+
+    display: none;
+    /* Adjust the height for smaller screens */
+  }
+
+  .small-elements-icon {
+    display: none
+  }
+   .video {
+    
+    top: 295px;
+    left: 453px;
+    left: 561px;
+    height: 58px;
+}
+.image-icon {
+  top: 10.100000000000001px;
+  left: 11.41px;
+  width: 78.86px;
+  height: 82.86px;
+  
+}
+.video-icon {
+ 
+  top: 37.76px;
+  left: 33.7px;
+ 
+  width: 34.61px;
+  height: 34.61px;
+
+  cursor: pointer;
+}
+.bg {
+  top: 0;
+  left: 0;
+
+  width: 99px;
+  height: 104px;
+}
+
+  .hero-area {
+    display: flex;
+    font-size: 30px;
+    left: -250px;
+    top: -60px;
+    /* Adjust the font size for smaller screens */
+  }
+
+  .a-better-learning-container {
+    width: 320px;
+
+  }
+
+  .all-the-lorem {
+    width: 300px;
+  }
+
+  .frame-parent {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .slider-icon {
+    /* position: absolute;
+    top: 141px;
+    left: 1058px; */
+    display: flex;
+    flex-direction: column;
+    width: 246px;
+    height: 246px;
+    left: 450px;
+  }
+
+  .cart {
+    position: static;
+    left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 80px;
+    margin-bottom: 900px;
+  }
+
+  .div {
+    top: 850px;
+    width: 303px;
+    height: 380px;
+    bottom: 900px;
+
+  }
+  .modal {
+    /* Adjust the position and size for small screens */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    max-width: 600px; /* Set a maximum width if needed */
+    /* height: auto; Allow the modal to grow in height if content overflows */
+  }
+  .videoContainer {
+    /* Adjust the height, width, and margins for small screens */
+    height: 600px;
+    width: 620%;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .close {
+    
+    right: 92px;
+   
+}
+.bg-element-icon1 {
+  width: auto;
+}
+
+}
